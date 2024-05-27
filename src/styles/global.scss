@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+	margin: 0;
+	font-family: 'Nunito', sans-serif;
+	background-color: white;
+	color: #39414b;
+	font-size: 18px;
+}
+
+.courses-page {
+	display: flex;
+}
+
+.filter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 264px;
+	padding: 20px;
+	margin: 20px 0 auto 20px;
+	border: 1px solid #cfcfe4;
+	height: auto;
+	border-radius: 10px;
+}
+
+.filter button {
+	display: block;
+	width: 240px;
+	padding: 10px 15px;
+	margin: 5px 0;
+	background-color: white;
+	color: #39414b;
+	border: none;
+	border-radius: 5px;
+	text-align: left;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.filter button.selected,
+.filter button:hover {
+	background-color: #5fbf77;
+	color: #fff;
+}
+
+.course-list {
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 20px;
+	align-items: stretch;
+}
+
+.course-card {
+	flex: 1 1 calc(33.333% - 40px);
+	box-sizing: border-box;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0 10px 13px -4px rgba(35, 35, 95, 0.19);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	max-height: 225px;
+}
+
+.course-card.empty {
+	box-shadow: none;
+}
+
+.course-card img {
+	max-width: 144px;
+	max-height: 144px;
+	margin: 9px;
+}
+
+.course-card h3 {
+	margin: 0;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #fff;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	height: auto;
+	text-align: start;
+	word-wrap: break-word;
+	min-height: 3em;
+}
